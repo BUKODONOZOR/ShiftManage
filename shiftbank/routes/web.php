@@ -13,7 +13,6 @@ Route::get('/manage', function () {
     return view('manage');
 })->name('manage');  
 
-
 Route::get('/shifts', function () {
     return view('shifts');
 })->name('shifts');
