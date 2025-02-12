@@ -7,13 +7,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js']) <!-- Solo si usas Vite -->
     @livewireStyles
 </head>
-<body>
-    <!-- Barra de Navegación -->
-    <nav class="navbar">
-        <a href="{{ route('register') }}" class="nav-link">Register</a>
-        <a href="{{ route('shifts') }}" class="nav-link">View Shifts</a>
-        <a href="{{ route('manage') }}" class="nav-link">Manage</a>
-    </nav>
+<body class="bg-gray-100">
 
     <!-- Contenido Principal -->
     <div class="main-container">
