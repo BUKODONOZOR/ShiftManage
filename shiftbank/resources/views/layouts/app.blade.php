@@ -28,29 +28,6 @@
         padding: 0;
     }
 
-    /* Barra de Navegación */
-    .navbar {
-        background-color: #2196F3; /* Azul claro */
-        padding: 1rem;
-        display: flex;
-        justify-content: center;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .nav-link {
-        color: #ffffff; /* Blanco para el texto */
-        text-decoration: none;
-        padding: 0.5rem 1rem;
-        margin: 0 0.5rem;
-        transition: background-color 0.2s, transform 0.2s;
-        border-radius: 0.25rem;
-    }
-
-    .nav-link:hover {
-        background-color: #1976D2; /* Azul más oscuro al pasar el mouse */
-        transform: translateY(-2px);
-    }
-
     /* Contenedor Principal */
     .main-container {
         max-width: 1200px;
