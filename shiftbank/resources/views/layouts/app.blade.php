@@ -9,11 +9,7 @@
 </head>
 <body class="bg-gray-100">
 
-    <nav class="bg-blue-500 text-white p-4">
-        <a href="{{ route('register') }}" class="px-4">Register</a>
-        <a href="{{ route('shifts') }}" class="px-4">View Shifts</a>
-        <a href="{{ route('manage') }}" class="px-4">Manage</a>
-    </nav>
+    
 
     <div class="container mx-auto mt-6">
         @yield('content')
