@@ -51,14 +51,4 @@
         background-color: #1976D2; /* Azul más oscuro al pasar el mouse */
         transform: translateY(-2px);
     }
-
-    /* Contenedor Principal */
-    .main-container {
-        max-width: 1200px;
-        margin: 1.5rem auto;
-        padding: 1rem;
-        background-color: #ffffff; /* Blanco para el fondo del contenido */
-        border-radius: 0.5rem;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
 </style>

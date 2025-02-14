@@ -211,8 +211,8 @@
         <div class="turno-card-container">
             @if ($turnoActual)
                 <div class="turno-card">
-                    <h3>{{ $turnoActual->number }}</h3>
-                    <h1>{{ $turnoActual->random_module }}</h1>
+                    <h2>Turno: {{ $turnoActual->number }}</h2>
+                    <h2>Módulo: {{ $turnoActual->random_module }}</h2>
                     <p>{{ $turnoActual->name }}</p>
                 </div>
             @else
