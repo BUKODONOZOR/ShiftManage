@@ -28,7 +28,7 @@
         margin: 0;
         padding: 0;
     }
-
+    
     /* Barra de Navegación */
     .navbar {
         background-color: #2196F3; /* Azul claro */
