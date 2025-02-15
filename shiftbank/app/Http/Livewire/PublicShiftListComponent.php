@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Livewire;
 
 use Livewire\Component;
@@ -9,10 +8,17 @@ class PublicShiftListComponent extends Component
 {
     public function render()
     {
-        $pendingShifts = Shift::where('state', 'pendient')->orderBy('number')->get();
-        $inProgressShifts = Shift::where('state', 'progress')->orderBy('box')->get();
+        $turnosEnProceso = Shift::where('state', 'progress')
+            ->orderBy('box')
+            ->take(4)
+            ->get()
+            ->map(function ($turno) {
+                $turno->random_module = rand(1, 4);
+                return $turno;
+            });
 
-        return view('livewire.public-shift-list-component', compact('pendingShifts', 'inProgressShifts'));
+        $turnoActual = $turnosEnProceso->first();
+
+        return view('livewire.public-shift-list-component', compact('turnosEnProceso', 'turnoActual'));
     }
 }
-

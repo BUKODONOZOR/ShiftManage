@@ -14,7 +14,7 @@
                             <button class="btn-start" wire:click="updateState({{ $shift->id }}, 'progress')">
                                 <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
-                                </svg>
+                                    shifts              </svg>
                                 Iniciar
                             </button>
                         </li>
@@ -72,13 +72,6 @@
     }
 
     /* Contenido Principal */
-    .main-content {
-        background-image: url('{{ asset('images/wave-pattern.png') }}');
-        background-size: cover;
-        background-position: center;
-        padding: 2rem 0;
-    }
-
     .content-container {
         max-width: 1200px;
         margin: 0 auto;
@@ -93,6 +86,7 @@
         font-weight: bold;
         margin-bottom: 1rem;
         color: #212121;
+        text-align: center;
     }
 
     /* Secciones */
